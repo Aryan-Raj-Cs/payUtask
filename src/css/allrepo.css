@@ -1,0 +1,53 @@
+.name {
+  color: #ee6e73;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.counter {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ee6e73;
+  font-size: 1.1em;
+  color: white;
+  position: relative;
+}
+
+.counter-children {
+  position: absolute;
+  top: -30px;
+  color: black;
+  width: 130px;
+  font-size: 0.8em;
+}
+
+.card-style {
+  width: 300px;
+  margin: 8px;
+}
+.date {
+  display: flex;
+  margin-top: 32px;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+}
+
+.date-children {
+  width: 50%;
+}
+
+.card-content-children {
+  display: flex;
+  justify-content: space-between;
+}
+.repo-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
