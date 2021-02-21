@@ -19,6 +19,9 @@ function Navbar() {
     if (history.location.pathname === "/") {
       dispatch({ type: "BACK" });
     }
+    if (history.location.pathname === "/history") {
+      history.replace("/");
+    }
     history.goBack();
   };
 
