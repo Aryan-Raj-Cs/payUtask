@@ -3,6 +3,7 @@ export const USER_STATE = {
   historyData: [],
   user: {},
   back: false,
+  allRepo: false,
 };
 
 const Reducers = (state = USER_STATE, action) => {
@@ -21,6 +22,18 @@ const Reducers = (state = USER_STATE, action) => {
         ...state,
         historyData: [...state.historyData, action.value],
         back: true,
+      };
+
+    case "ALLREPO":
+      return {
+        ...state,
+        allRepo: true,
+      };
+
+    case "FALSEALLREPO":
+      return {
+        ...state,
+        allRepo: false,
       };
 
     case "BACK":

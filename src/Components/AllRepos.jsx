@@ -16,7 +16,6 @@ function AllRepos(props) {
     fetch(githubapi + username)
       .then((res) => res.json())
       .then((result) => {
-        // console.log(result);
         dispatch({ type: "LOADSTART" });
         if (result.message === "Not Found") {
           M.toast({ html: "user Not Found!", classes: "#d32f2f red darken-2" });
@@ -24,8 +23,8 @@ function AllRepos(props) {
           fetch(result.repos_url)
             .then((res) => res.json())
             .then((repos) => {
-              console.log(repos);
               setRepo(repos);
+              dispatch({ type: "ALLREPO" });
               dispatch({ type: "LOADEND" });
             });
         }

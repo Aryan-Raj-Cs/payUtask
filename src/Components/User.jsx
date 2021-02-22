@@ -42,20 +42,20 @@ function User(props) {
         <img src={img} alt="img" />
       ) : (
         <div className="container">
-          <div class="col s12 m7">
-            <div class="card">
-              <div class="card-action">
+          <div className="col s12 m7">
+            <div className="card">
+              <div className="card-action">
                 <span>
                   <strong>{user.login}</strong>
                 </span>
               </div>
               <div
-                class="card-image"
+                className="card-image"
                 style={{ width: "40%", height: "40%", margin: "auto" }}
               >
                 <img src={user.avatar_url} alt="img not found" />
               </div>
-              <div class="card-content">
+              <div className="card-content">
                 <div>
                   <span>{user.location}</span>
                 </div>
@@ -67,11 +67,11 @@ function User(props) {
                 </span>
               </div>
 
-              <div class="card-action">
+              <div className="card-action">
                 <strong> Email:</strong>
                 {user.email}
               </div>
-              <div class="card-action">
+              <div className="card-action">
                 <strong>{user.public_repos} Repos</strong>
                 <strong>
                   {" "}

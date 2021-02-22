@@ -13,19 +13,20 @@ function Navbar() {
   };
 
   const goback = () => {
-    if (history.location.pathname === "/") {
+    if (state.allRepo === true) {
+      dispatch({ type: "FALSEALLREPO" });
+      history.goBack();
+    } else {
       dispatch({ type: "BACK" });
-    }
-    if (history.location.pathname === "/history") {
       history.replace("/");
     }
-    history.goBack();
+    // history.goBack();
   };
 
   return (
     <nav>
       <div className="nav-wrapper navstyle">
-        <span class="brand logostyle">
+        <span className="brand logostyle">
           <Link to="/">GitHub</Link>
         </span>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
