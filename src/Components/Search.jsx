@@ -29,7 +29,7 @@ const Search = () => {
           <input type="text" value={user} onChange={handleUser} />
           <label> Search User</label>
           <span
-            class="helper-text"
+            className="helper-text"
             data-error="wrong"
             data-success="right"
             style={{ color: "red" }}

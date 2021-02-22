@@ -13,9 +13,6 @@ function Navbar() {
   };
 
   const goback = () => {
-    //
-    // history.replace("/");
-    console.log(history, history.location.pathname);
     if (history.location.pathname === "/") {
       dispatch({ type: "BACK" });
     }
